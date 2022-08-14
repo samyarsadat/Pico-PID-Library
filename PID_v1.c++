@@ -25,10 +25,10 @@ PID::PID(float *Input, float *Output, float *Setpoint, float Kp, float Ki, float
     mySetpoint = Setpoint;
     inAuto = false;
 
-    PID::SetOutputLimits(0, 255);  // default output limit corresponds to
-                                   // the arduino pwm limits
+    PID::SetOutputLimits(0, 65535);  // default output limit corresponds to
+                                     // the pico's pwm limits
 
-    SampleTime = 100;              // default Controller Sample Time is 0.1 seconds
+    SampleTime = 100;                // default Controller Sample Time is 0.1 seconds
 
     PID::SetControllerDirection(ControllerDirection);
     PID::SetTunings(Kp, Ki, Kd, POn);
