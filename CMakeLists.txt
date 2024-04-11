@@ -1,13 +1,11 @@
-/*
-   Arduino PID Library - Version 1.2.1
-   by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com
-   Ported to the Raspberry Pi Pico by Samyar Sadat Akhavi.
-
-   Original library: https://github.com/br3ttb/Arduino-PID-Library
-   Forked version for Pico: https://github.com/samyarsadat/Pico-PID-Library
-
-   This Library is licensed under the MIT License.
-*/
+#  Arduino PID Library - Version 1.2.1
+#  by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com
+#  Ported to the Raspberry Pi Pico by Samyar Sadat Akhavi.
+#
+#  Original library: https://github.com/br3ttb/Arduino-PID-Library
+#  Forked version for Pico: https://github.com/samyarsadat/Pico-PID-Library
+#
+#  This Library is licensed under the MIT License.
 
 
 # Set minimum required version of CMake
