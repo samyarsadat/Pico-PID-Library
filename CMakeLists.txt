@@ -20,7 +20,7 @@ endif ()
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 # Set project name and C/C++ standards
-project(pid_v1_lib VERSION 1.0.0 LANGUAGES C CXX ASM)
+project(pid_v1_lib VERSION 1.2.1 LANGUAGES C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
