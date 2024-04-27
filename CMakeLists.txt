@@ -40,4 +40,4 @@ set(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -ffunction-sections -fdata-sections")
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -ffunction-sections -fdata-sections")
 add_compile_options(-Wall -Wextra -Wpedantic)
 
-message("Configured PID Library build. (${PROJECT_NAME} - v${CMAKE_PROJECT_VERSION})")
+message("Configured PID Library build. (${PROJECT_NAME} - v${PROJECT_VERSION})")
