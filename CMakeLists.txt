@@ -27,13 +27,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialize the Pico SDK
 pico_sdk_init()
 
-
-# Add source files
-add_library(${PROJECT_NAME} PID_v1.c++)
-
-# Link to libraries
-target_link_libraries(${PROJECT_NAME} pico_stdlib)
-
+# Add source subdirectory
+add_subdirectory(src)
 
 # CMake flags
 set(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -ffunction-sections -fdata-sections")
