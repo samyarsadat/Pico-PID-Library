@@ -218,7 +218,7 @@ void PID::SetMode(int Mode)
 
 
 /** Initialize() ***********************************************************
- *	does all the things that need to happen to ensure a bumpless transfer
+ *  does all the things that need to happen to ensure a bumpless transfer
  *  from manual to automatic mode.
  ***************************************************************************/
 void PID::Initialize()
