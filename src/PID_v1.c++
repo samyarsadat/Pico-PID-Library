@@ -11,7 +11,7 @@
 
 
 #include "pico/stdlib.h"
-#include "PID_v1.h"
+#include "pid_v1_lib/PID_v1.h"
 
 
 /** Constructor (...) ******************************************************
