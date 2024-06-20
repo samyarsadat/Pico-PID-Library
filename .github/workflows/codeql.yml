@@ -1,0 +1,50 @@
+#  Arduino PID Library - Version 1.2.1
+#  by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com
+#  Ported to the Raspberry Pi Pico by Samyar Sadat Akhavi.
+#
+#  See https://github.com/samyarsadat/ROS-Robot for more information about this workflow.
+#
+#  Original library: https://github.com/br3ttb/Arduino-PID-Library
+#  Forked version for Pico: https://github.com/samyarsadat/Pico-PID-Library
+#
+#  This Library is licensed under the MIT License.
+
+name: CodeQL Analysis
+on:
+    push:
+    schedule:
+        - cron: "50 16 * * MON"   # Every Monday at 4:50 PM UTC
+
+jobs:
+    analyze_pico:
+        name: Build and Analyze
+        runs-on: ubuntu-latest
+        container: samyarsadat/service_images:pico-build-action-latest
+
+        permissions:
+            security-events: write
+            contents: read
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  submodules: recursive
+
+            - name: Initialize CodeQL
+              uses: github/codeql-action/init@v3
+              with:
+                  languages: c-cpp
+                  build-mode: manual
+                  queries: security-and-quality
+
+            - name: Build Pico Source Code
+              id: build
+              shell: bash
+              run: |
+                  bash ".github/workflows/codeql-scripts/pico-build.sh" "./"
+
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v3
+              with:
+                  category: "/language:c-cpp"

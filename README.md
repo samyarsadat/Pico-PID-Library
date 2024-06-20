@@ -7,7 +7,6 @@ Forked version for Pico: https://github.com/samyarsadat/Pico-PID-Library<br>
 <br>
 This Library is licensed under the MIT License.<br>
 <br>
-<br>
  - For an ultra-detailed explanation of why the code is the way it is, please visit: 
    http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
 
