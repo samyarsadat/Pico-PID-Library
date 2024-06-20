@@ -1,3 +1,6 @@
+[![CodeQL Analysis](https://github.com/samyarsadat/Pico-PID-Library/actions/workflows/codeql.yml/badge.svg)](https://github.com/samyarsadat/Pico-PID-Library/actions/workflows/codeql.yml)
+<br>
+
 Arduino PID Library - Version 1.2.1<br>
 by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com<br>
 Ported to the Raspberry Pi Pico by Samyar Sadat Akhavi.<br>
